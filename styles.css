@@ -1,0 +1,484 @@
+body {
+  background-color: rgb(36, 36, 36);
+
+  font-family: sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* BANNER CON IMAGEN POKEDEX */
+
+.header {
+  width: 100%;
+  height: 100px;
+
+  background-color: rgb(204, 0, 0);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed; /* se quede fijo en la parte superior del viewport */
+}
+
+.header__logo {
+  max-width: 250px;
+}
+
+/* MENU CON BUSCADOR DE POKEMONS */
+
+.nav {
+  width: 100%;
+  height: 50px;
+
+  background-color: rgb(255, 222, 0);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 100px;
+}
+
+.form__input {
+  width: 300px;
+
+  outline: none;
+  border: none;
+}
+
+.form__button {
+  background-color: white;
+  border: none;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background-color: rgb(179, 161, 37);
+  color: white;
+}
+
+.form__button:active {
+  background-color: rgb(199, 182, 69);
+  color: white;
+}
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  height: 25px;
+
+  background-color: rgb(255, 222, 0);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 97vh;
+}
+
+/* TARJETAS PEQUEÑAS POKEDEX */
+
+.cards {
+  margin-top: 150px;
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+}
+
+.cards__card {
+  width: 150px;
+  height: 200px;
+
+  background-color: rgb(255, 222, 0);
+
+  border-radius: 25px;
+  margin: 20px auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* center */
+  align-items: center;
+}
+
+.cards__id {
+  font-size: 1em;
+  margin: 8px;
+  color: rgb(0, 0, 0);
+}
+
+.cards__sprite {
+  height: 100px;
+  width: auto;
+}
+
+.cards__name {
+  font-size: 1.2em;
+  margin: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.cards__types {
+  width: 70%;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cards__type {
+  padding: 1.5px 5px;
+  font-size: 0.6em;
+  margin: -3px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 25px;
+  color: rgb(0, 0, 0);
+}
+
+/*   BACKGROUNDS SEGUN EL TIPO DE POKEMON */
+
+.grass {
+  background: linear-gradient(rgb(175, 230, 145), rgb(111, 156, 90));
+}
+
+.fire {
+  background: linear-gradient(rgb(240, 137, 97), rgb(173, 85, 63));
+}
+
+.water {
+  background: linear-gradient(rgb(110, 200, 300), rgb(120, 125, 194));
+}
+
+.bug {
+  background: linear-gradient(rgb(216, 231, 78), rgb(162, 212, 81));
+}
+
+.normal {
+  background: linear-gradient(rgb(187, 196, 143), rgb(144, 151, 108));
+}
+
+.poison {
+  background: linear-gradient(rgb(224, 97, 199), rgb(141, 55, 124));
+}
+
+.electric {
+  background: linear-gradient(rgb(247, 211, 29), rgb(192, 164, 25));
+}
+
+.ground {
+  background: linear-gradient(rgb(219, 155, 91), rgb(177, 124, 71));
+}
+
+.fairy {
+  background: linear-gradient(rgb(255, 203, 238), rgb(194, 146, 178));
+}
+
+.psychic {
+  background: linear-gradient(rgb(167, 79, 207), rgb(121, 57, 151));
+}
+
+.fighting {
+  background: linear-gradient(rgb(190, 78, 87), rgb(141, 61, 68));
+}
+
+.rock {
+  background: linear-gradient(rgb(223, 138, 101), rgb(155, 89, 61));
+}
+
+.ghost {
+  background: linear-gradient(rgb(63, 64, 119), rgb(47, 47, 77));
+}
+
+.ice {
+  background: linear-gradient(rgb(194, 240, 240), rgb(141, 185, 185));
+}
+
+.dragon {
+  background: linear-gradient(rgb(138, 92, 224), rgb(86, 51, 143));
+}
+
+.flying {
+  background: linear-gradient(rgb(170, 133, 238), rgb(105, 74, 156));
+}
+
+.steel {
+  background: linear-gradient(rgb(219, 218, 221), rgb(161, 161, 163));
+}
+
+.dark {
+  background: linear-gradient(rgb(62, 57, 73), rgb(41, 41, 53));
+}
+
+/* TARJETA GRANDE CON INFO */
+
+.parent {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 350px;
+  height: 500px;
+
+  background-color: rgb(25, 25, 25);
+  border-radius: 24px;
+
+  position: fixed;
+}
+
+.card__sup {
+  width: 350px;
+  height: 220px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__id {
+  font-size: 1em;
+}
+
+.card__sprite {
+  max-height: 130px;
+  width: auto;
+}
+
+.card__types {
+  width: 50%;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card__type {
+  padding: 1.5px 5px;
+  font-size: 0.8em;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 25px;
+  color: rgb(0, 0, 0);
+}
+
+.card__inf {
+  width: 350px;
+  height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__name {
+  margin: 10px 0 0 0;
+  font-size: 2em;
+}
+
+.card__trait {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.trait__height,
+.trait__weight {
+  margin: 0px 50px;
+}
+
+.trait__number {
+  text-align: center;
+  margin-top: -15px;
+  color: rgb(110, 200, 300);
+}
+
+.card__stats {
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats__title {
+  margin: -5px 0px 5px 0px;
+}
+
+.stats__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.stats__lines {
+  display: flex;
+  align-items: center;
+}
+
+.lines__title {
+  width: 30px;
+  margin: 1px 10px;
+
+  color: black;
+  text-align: center;
+}
+
+.lines__container {
+  width: 250px;
+  height: 10px;
+  border-radius: 25px;
+  background: black;
+}
+
+.lines {
+  position: absolute;
+
+  margin-left: 50px;
+  height: 10px;
+  border-radius: 25px;
+}
+
+.hp {
+  background: rgb(254, 167, 183);
+}
+
+.atk {
+  background: rgb(249, 226, 133);
+}
+
+.def {
+  background: rgb(180, 219, 248);
+}
+
+.atx {
+  background: rgb(161, 236, 205);
+}
+
+.dfx {
+  background: rgb(231, 185, 133);
+}
+
+.spe {
+  background: rgb(227, 191, 219);
+}
+
+.closeCard {
+  width: 60px;
+  height: 60px;
+
+  border: none;
+  border-radius: 50px;
+  font-size: 2em;
+
+  outline: none;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeCard::after {
+  content: "x";
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TIPOS DE POKEMON FONT COLOR */
+
+.grass__color {
+  color: rgb(175, 230, 145);
+}
+
+.fire__color {
+  color: rgb(173, 85, 63);
+}
+
+.water__color {
+  color: rgb(120, 125, 194);
+}
+
+.bug__color {
+  color: rgb(162, 212, 81);
+}
+
+.normal__color {
+  color: rgb(144, 151, 108);
+}
+
+.poison__color {
+  color: rgb(141, 55, 124);
+}
+
+.electric__color {
+  color: rgb(192, 164, 25);
+}
+
+.ground__color {
+  color: rgb(177, 124, 71);
+}
+
+.fairy__color {
+  color: rgb(194, 146, 178);
+}
+
+.psychic__color {
+  color: rgb(121, 57, 151);
+}
+
+.fighting__color {
+  color: rgb(141, 61, 68);
+}
+
+.rock__color {
+  color: rgb(155, 89, 61);
+}
+
+.ghost__color {
+  color: rgb(47, 47, 77);
+}
+
+.ice__color {
+  color: rgb(141, 185, 185);
+}
+
+.dragon__color {
+  color: rgb(86, 51, 143);
+}
+
+.flying__color {
+  color: rgb(105, 74, 156);
+}
+
+.steel__color {
+  color: rgb(161, 161, 163);
+}
+
+.dark__color {
+  color: rgb(62, 57, 73);
+}

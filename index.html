@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <title>POKEDEX 2.0</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/pokedex-favicon.png"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <img
+        src="/assets/images/pokedeex.png"
+        alt="pokedex-logo"
+        class="header__logo"
+      />
+    </header>
+    <nav class="nav">
+      <form action="#" class="form" id="form">
+        <input
+          type="text"
+          name="pokemon"
+          class="form__input"
+          id="form__input"
+          placeholder="Escribe el nombre o el ID del pokémon"
+        />
+        <input
+          type="submit"
+          value="Buscar"
+          class="form__button"
+          id="form__button"
+        />
+      </form>
+    </nav>
+    <section>
+      <div id="parent"></div>
+      <div class="cards" id="cards">
+    </section>
+    <footer class="footer">
+      <small class="footer__info"
+        >Pokedex hecha con
+        <a href="https://pokeapi.co/" target="_blank">PokéAPI</a>
+      </small>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
+
+<!--         <div class="card" id="card">
+          <div class="card__sup grass">
+            <h2 class="card__id">#001</h2>
+            <img
+              class="card__sprite"
+              src="../03. POKEDEX/assets/images/primera generación/gif/Blastoise.gif"
+              alt=""
+            />
+            <div class="card__types">
+              <h2 class="card__type grass">grass</h2>
+              <h2 class="card__type poison">poison</h2>
+            </div>
+          </div>
+          <div class="card__inf">
+            <h2 class="card__name grass__color">BULBASAUR</h2>
+            <div class="card__trait">
+              <div class="trait__height">
+                <h3 class="trait__label">HEIGHT</h3>
+                <p class="trait__number grass__color">0.7m</p>
+              </div>
+              <div class="trait__weight">
+                <h3 class="trait__label">WEIGHT</h3>
+                <p class="trait__number grass__color">6.9kg</p>
+              </div>
+            </div>
+            <div class="card__stats">
+              <h3 class="stats__title">BASE STATS</h3>
+              <div class="stats__container">
+                <div class="stats__lines">
+                  <h4 class="lines__title">HP</h4>
+                  <div class="lines__container"></div>
+                  <div class="lines hp" id="hp"></div>
+                </div>
+                <div class="stats__lines">
+                  <h4 class="lines__title">ATK</h4>
+                  <div class="lines__container"></div>
+                  <div class="lines atk"></div>
+                </div>
+                <div class="stats__lines">
+                  <h4 class="lines__title">DEF</h4>
+                  <div class="lines__container"></div>
+                  <div class="lines def"></div>
+                </div>
+                <div class="stats__lines">
+                  <h4 class="lines__title">ATX</h4>
+                  <div class="lines__container"></div>
+                  <div class="lines atx"></div>
+                </div>
+                <div class="stats__lines">
+                  <h4 class="lines__title">DFX</h4>
+                  <div class="lines__container"></div>
+                  <div class="lines dfx"></div>
+                </div>
+                <div class="stats__lines">
+                  <h4 class="lines__title">SPE</h4>
+                  <div class="lines__container"></div>
+                  <div class="lines spe"></div>
+                </div>
+              </div>
+            </div>
+            <input class="closeCard" type="button" value="X" />
+          </div>
+        </div> -->
+
+
+        <!--         <div class="cards__card grass">
+          <h2 class="cards__id">#001</h2>
+          <img
+            class="cards__sprite"
+            id="Bulbasaur"
+            src="../03. POKEDEX/assets/images/primera generación/gif/Blastoise.gif"
+          />
+          <h2 class="cards__name">BULBASAUR</h2>
+          <div class="cards__types">
+            <h2 class="cards__type grass">grass</h2>
+            <h2 class="cards__type poison">poison</h2>
+          </div>
+        </div>
+      </div> -->
